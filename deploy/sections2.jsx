@@ -141,19 +141,25 @@ function PhilosophySection() {
         <div className="col-span-3 px-14 py-16">
           <Eyebrow en="Our Philosophy">選曲について</Eyebrow>
           <h3 className="font-mincho text-ink leading-[1.5] mt-8" style={{ fontSize: 27, letterSpacing: '.05em', fontWeight: 400 }}>
-            曲は、いま<span className="text-goldDeep">“決めてこなくて”</span>大丈夫です。
+            曲はシーンごとに<span className="text-goldDeep">”決め切らなくて”</span>大丈夫です。
           </h3>
           <p className="font-gothic text-ink/70 leading-[2.15] mt-8" style={{ fontSize: 13 }}>
-            近ごろは、念入りに調べてからお越しになる方が増えました。その想いは、とても嬉しく思います。
-            ただ、シーンに本当に響く一曲は、会場の広さ・進行・ゲストの顔ぶれまで見て、はじめて決まります。
+            近ごろは念入りに調べてからお越しになる方が増え、その熱量や想いをとても嬉しく思っています。
+            事前にお渡ししている「my Favorite songs」に、お好きなアーティストや思い出の映画、普段聴く音楽などを書いていただければ準備はバッチリです。
           </p>
           <p className="font-gothic text-ink/70 leading-[2.15] mt-5" style={{ fontSize: 13 }}>
-            だからこそ、選曲はお打ち合わせで一緒に。何百組と現場を重ねてきたミュージックプランナーが、
-            おふたりの「こうしたい」をうかがいながら、その日いちばん合う音をご提案します。
-            無理にリストを揃えてくる必要はありません。
+            ただ、「どのシーンでどの曲を流すか」まで完璧に決める必要はありません。
+          </p>
+          <p className="font-gothic text-ink/70 leading-[2.15] mt-5" style={{ fontSize: 13 }}>
+            シーンに本当に響く一曲は、おふたりがどんな披露宴にしたいか、ゲストへの想い・会場の広さ・進行のテンポまで見合わせて、
+            はじめてかみ合うものだからです。
+          </p>
+          <p className="font-gothic text-ink/70 leading-[2.15] mt-5" style={{ fontSize: 13 }}>
+            「このアーティストが好き」という種があれば十分。お打ち合わせでは、数多くの現場を重ねてきたミュージックプランナーが、
+            おふたりの「こうしたい」をうかがいながら、一番美しく映える配置をご提案し、一緒にカタチにしていきます。
           </p>
           <p className="font-mincho text-goldDeep mt-10" style={{ fontSize: 17, letterSpacing: '.06em' }}>
-            どうぞ、私たちの耳を信じて、おまかせください。
+            どうぞ、私たちの耳と提案を信じて、リラックスしてお越しください。
           </p>
         </div>
       </div>

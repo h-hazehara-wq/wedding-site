@@ -51,7 +51,7 @@ function SubmitSection() {
       </div>
 
       <p className="text-center font-gothic text-muted mt-9" style={{ fontSize: 11 }}>
-        フォームが開かない場合や、ご不明な点は担当のミュージックプランナーへお問い合わせください。
+        フォームが開かない場合や、ご不明な点はお問い合わせください。
       </p>
     </section>);
 
