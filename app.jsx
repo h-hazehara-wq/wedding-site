@@ -9,7 +9,7 @@ function App() {
   const go = useCallback((id) => {
     const target = document.getElementById(id);
     if (!target) return;
-    window.scrollTo({ top: Math.max(0, target.getBoundingClientRect().top + window.scrollY - 72), behavior: 'smooth' });
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     if (id === 'contact') return;
     setActive(SPY_IDS.includes(id) ? id : active);
   }, [active]);

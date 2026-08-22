@@ -9,7 +9,7 @@ function App() {
   const go = useCallback((id) => {
     const target = document.getElementById(id);
     if (!target) return;
-    window.scrollTo({ top: Math.max(0, target.getBoundingClientRect().top + window.scrollY - 84), behavior: 'smooth' });
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, []);
 
   useEffect(() => {

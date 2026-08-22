@@ -47,67 +47,67 @@ const PERMISSION = [
 
 function CopyrightSection() {
   return (
-    <section id="copyright" className="px-14 py-24 bg-cream/50">
+    <section id="copyright" className="scroll-mt-20 px-5 sm:px-14 py-12 sm:py-24 bg-cream/50">
       <SectionHead en="About BGM" title="BGM・著作権について。"
         sub="お打ち合わせで決まったBGMは、許諾申請も音源準備も当会場が行います。" center />
 
       <div className="max-w-3xl mx-auto border-t border-line">
         {BGM_POINTS.map((p, i) => (
-          <div key={i} className="bg-white border-b border-x border-line px-9 py-8 flex items-start gap-7">
-            <span className="shrink-0 font-enserif text-gold pt-0.5" style={{ fontSize: 20 }}>{String(i + 1).padStart(2, '0')}</span>
+          <div key={i} className="bg-white border-b border-x border-line px-5 sm:px-9 py-6 sm:py-8 flex items-start gap-4 sm:gap-7">
+            <span className="shrink-0 font-enserif text-gold pt-0.5 text-lg sm:text-[20px]">{String(i + 1).padStart(2, '0')}</span>
             <div>
-              <h4 className="font-mincho text-ink leading-relaxed" style={{ fontSize: 15.5, letterSpacing: '.04em' }}>{p.title}</h4>
-              <p className="font-gothic text-ink/65 mt-3 leading-[2]" style={{ fontSize: 12.5 }}>{p.body}</p>
+              <h4 className="font-mincho text-ink leading-relaxed text-[14.5px] sm:text-[15.5px]" style={{ letterSpacing: '.04em' }}>{p.title}</h4>
+              <p className="font-gothic text-ink/70 mt-2 sm:mt-3 leading-[1.85] sm:leading-[2] text-[12px] sm:text-[12.5px]">{p.body}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <p className="text-center font-gothic text-muted mt-9" style={{ fontSize: 11 }}>
+      <p className="text-center font-gothic text-muted mt-6 sm:mt-9 text-[10.5px] sm:text-[11px] px-2">
         ※ 上記はBGMリストにも記載しております。ご不明な点はお打合せ時担当ミュージックプランナーへお問い合わせください。
       </p>
 
-      <div className="max-w-3xl mx-auto mt-16 px-10 py-11" style={{ background: '#F4EEE3' }}>
-        <div className="font-gothic text-goldDeep" style={{ fontSize: 10.5, letterSpacing: '.22em' }}>ABOUT THE CEREMONY</div>
-        <h4 className="font-mincho text-ink mt-5 leading-relaxed" style={{ fontSize: 19, letterSpacing: '.04em' }}>挙式のBGMについて</h4>
-        <p className="font-gothic text-ink/70 mt-5 leading-[2.1]" style={{ fontSize: 12.5 }}>
+      <div className="max-w-3xl mx-auto mt-10 sm:mt-16 px-6 sm:px-10 py-7 sm:py-11" style={{ background: '#F4EEE3' }}>
+        <div className="font-gothic text-goldDeep text-[10px] sm:text-[10.5px]" style={{ letterSpacing: '.22em' }}>ABOUT THE CEREMONY</div>
+        <h4 className="font-mincho text-ink mt-3 sm:mt-5 leading-relaxed text-lg sm:text-[19px]" style={{ letterSpacing: '.04em' }}>挙式のBGMについて</h4>
+        <p className="font-gothic text-ink/70 mt-3 sm:mt-5 leading-[1.9] sm:leading-[2.1] text-[12px] sm:text-[12.5px]">
           BGM のお打ち合わせでお伺いするのは、ご披露宴の楽曲についてです。挙式のBGMは、生演奏にあわせて特別にセレクトした楽曲をご用意しております。詳細については担当プランナーまでお問い合わせください。
         </p>
       </div>
 
       <SubHead>ご使用いただけない音源について</SubHead>
-      <p className="text-center font-gothic text-muted mx-auto -mt-4 mb-10 leading-[2]" style={{ fontSize: 12.5, maxWidth: 620 }}>
+      <p className="text-center font-gothic text-muted mx-auto -mt-2 sm:-mt-4 mb-6 sm:mb-10 leading-[1.8] sm:leading-[2] text-[11.5px] sm:text-[12.5px]" style={{ maxWidth: 620 }}>
         著作権・著作隣接権の手続きが取れないため、以下の音源は会場での上映・再生ができません。
       </p>
-      <div className="max-w-3xl mx-auto grid grid-cols-2 border-t border-l border-line">
+      <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 border border-line md:border-r-0 md:border-b-0">
         {UNUSABLE.map((p) => (
-          <div key={p.title} className="bg-white border-r border-b border-line px-7 py-8">
-            <div className="flex items-start gap-3">
-              <span className="shrink-0 mt-1 text-ink/35"><IconClose size={14} /></span>
-              <h4 className="font-mincho text-ink leading-relaxed" style={{ fontSize: 14, letterSpacing: '.03em' }}>{p.title}</h4>
+          <div key={p.title} className="bg-white border-b md:border-r border-line px-5 sm:px-7 py-6 sm:py-8 last:border-b-0 md:last:border-b">
+            <div className="flex items-start gap-2.5 sm:gap-3">
+              <span className="shrink-0 mt-0.5 sm:mt-1 text-ink/35"><IconClose size={14} /></span>
+              <h4 className="font-mincho text-ink leading-relaxed text-[13.5px] sm:text-[14px]" style={{ letterSpacing: '.03em' }}>{p.title}</h4>
             </div>
-            <p className="font-gothic text-ink/65 mt-3.5 leading-[1.95]" style={{ fontSize: 12 }}>{p.body}</p>
+            <p className="font-gothic text-ink/70 mt-2.5 sm:mt-3.5 leading-[1.8] sm:leading-[1.95] text-[11.5px] sm:text-[12px]">{p.body}</p>
           </div>
         ))}
       </div>
 
       <SubHead>別途のご発注・許可が必要なもの</SubHead>
-      <p className="text-center font-gothic text-muted mx-auto -mt-4 mb-10 leading-[2]" style={{ fontSize: 12.5, maxWidth: 620 }}>
+      <p className="text-center font-gothic text-muted mx-auto -mt-2 sm:-mt-4 mb-6 sm:mb-10 leading-[1.8] sm:leading-[2] text-[11.5px] sm:text-[12.5px]" style={{ maxWidth: 620 }}>
         下記は BGM の許諾とは別に、機材のご発注または権利者への個別の申請が必要になります。
       </p>
       <div className="max-w-3xl mx-auto border-t border-line">
         {PERMISSION.map((p) => (
-          <div key={p.title} className="bg-white border-b border-x border-line px-9 py-8 flex items-start gap-5">
+          <div key={p.title} className="bg-white border-b border-x border-line px-5 sm:px-9 py-6 sm:py-8 flex items-start gap-3.5 sm:gap-5">
             <span className="shrink-0 mt-0.5 text-goldDeep"><IconAlert size={17} /></span>
             <div>
-              <h4 className="font-mincho text-ink leading-relaxed" style={{ fontSize: 15, letterSpacing: '.04em' }}>{p.title}</h4>
-              <p className="font-gothic text-ink/65 mt-3 leading-[2]" style={{ fontSize: 12.5 }}>{p.body}</p>
+              <h4 className="font-mincho text-ink leading-relaxed text-[14px] sm:text-[15px]" style={{ letterSpacing: '.04em' }}>{p.title}</h4>
+              <p className="font-gothic text-ink/70 mt-2 sm:mt-3 leading-[1.85] sm:leading-[2] text-[12px] sm:text-[12.5px]">{p.body}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <p className="text-center font-gothic text-muted mt-9 mx-auto leading-[1.9]" style={{ fontSize: 11, maxWidth: 620 }}>
+      <p className="text-center font-gothic text-muted mt-6 sm:mt-9 mx-auto leading-[1.8] sm:leading-[1.9] text-[10.5px] sm:text-[11px] px-2" style={{ maxWidth: 620 }}>
         ※ ご希望の楽曲や映像がご使用いただけるか判断に迷われる場合は、ご遠慮なく担当ミュージックプランナーへお尋ねください。代替のご提案も含めて一緒に検討いたします。
       </p>
     </section>

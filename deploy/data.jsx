@@ -40,9 +40,9 @@ const VENUE = {
 };
 
 const QUICK_ACTIONS = [
-  { id: 'video',  tab: 'manual', label: '映像の作り方・ルール', sub: 'サイズ / 形式の基本' },
-  { id: 'bgm',    tab: 'manual', label: 'BGM・著作権について', sub: '楽曲利用の手続き', scrollTo: 'copyright' },
-  { id: 'submit', tab: 'submit', label: 'データ提出窓口', sub: '専用フォームへ' },
+  { id: 'video',  target: 'manual',    label: '映像の作り方・ルール', sub: 'サイズ / 形式の基本' },
+  { id: 'bgm',    target: 'copyright', label: 'BGM・著作権について', sub: '楽曲利用の手続き' },
+  { id: 'submit', target: 'submit',    label: 'データ提出窓口', sub: '専用フォームへ' },
 ];
 
 Object.assign(window, { FAQS, QUICK_ACTIONS, VENUE });

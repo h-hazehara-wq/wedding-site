@@ -43,11 +43,11 @@ function Chip({ children, tone = 'beige' }) {
 // Eyebrow — wide-letterspaced latin label over a hairline
 function Eyebrow({ en, children, center = false, light = false }) {
   return (
-    <div className={`flex items-center gap-4 ${center ? 'justify-center' : ''}`}>
-      <span className={`h-px w-10 ${light ? 'bg-gold/50' : 'bg-ink/20'}`}></span>
+    <div className={`flex items-center gap-3 sm:gap-4 ${center ? 'justify-center' : ''}`}>
+      <span className={`h-px w-7 sm:w-10 ${light ? 'bg-gold/50' : 'bg-ink/20'}`}></span>
       <span className={`font-gothic uppercase ${light ? 'text-goldSoft' : 'text-goldDeep'}`}
         style={{ fontSize: 11, letterSpacing: '.24em' }}>{en}</span>
-      {children && <span className="font-gothic text-[11px] tracking-[.18em] text-muted">{children}</span>}
+      {children && <span className="font-gothic text-[10.5px] sm:text-[11px] tracking-[.18em] text-muted truncate">{children}</span>}
     </div>
   );
 }
@@ -55,10 +55,10 @@ function Eyebrow({ en, children, center = false, light = false }) {
 // Section heading block
 function SectionHead({ en, title, sub, center = false }) {
   return (
-    <div className={`${center ? 'text-center flex flex-col items-center' : ''} mb-14`}>
+    <div className={`${center ? 'text-center flex flex-col items-center' : ''} mb-9 sm:mb-14`}>
       <Eyebrow en={en} center={center} />
-      <h2 className="font-mincho text-ink mt-6 leading-[1.45]" style={{ fontSize: 31, letterSpacing: '.04em', fontWeight: 400 }}>{title}</h2>
-      {sub && <p className="font-gothic text-muted mt-5 leading-[2]" style={{ fontSize: 13.5, maxWidth: 620 }}>{sub}</p>}
+      <h2 className="font-mincho text-ink mt-5 sm:mt-6 leading-[1.4] sm:leading-[1.45] text-2xl sm:text-[31px]" style={{ letterSpacing: '.04em', fontWeight: 400 }}>{title}</h2>
+      {sub && <p className="font-gothic text-muted mt-3.5 sm:mt-5 leading-[1.85] sm:leading-[2] text-[12.5px] sm:text-[13.5px]" style={{ maxWidth: 620 }}>{sub}</p>}
     </div>
   );
 }
